@@ -4,7 +4,7 @@ This is empty on purpose! Your code to build the resume will go here.
 //$("#main").append("Manuel Esteban Aguas");
 //var thoughts = "I am manny and I am awesome" ;
 //$("#main").append(thoughts.replace("awesome", "fun"));
-
+/*
 var name = "Manuel Esteban Aguas";
 var role = "Software Engineer";
 
@@ -13,3 +13,91 @@ var formattedRole = HTMLheaderRole.replace("%data%", role)
 
 $("#header").append(formattedName);
 $("#header").append(formattedRole);
+
+
+var fContact = HTMLcontactGeneric.replace("%contact%", bio.contact).replace("%data%", bio.contact2);
+var fEmail = HTMLemail.replace("%data%", bio.email);
+var fGithub = HTMLgithub.replace("%data%", bio.github);
+var fBioPic = HTMLbioPic.replace("%data%", bio.pictureUrl);
+var fWelcomeMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
+var fSkills = HTMLskills.replace("%data%", bio.skills);
+var fMobile = HTMLmobile.replace("%data%", bio.mobile);
+
+
+$("#main").append(fMobile);
+$("#main").append(fEmail);
+$("#main").append(fGithub);
+$("#main").append(fContact);
+$("#main").append(fBioPic);
+$("#main").append(fWelcomeMessage);
+$("#main").append(fSkills);
+
+
+var work = {};
+work.title = "Medical Laboratory Scientist";
+work.employer = "4220th United States Army Hospital";
+work.years = "2010 - 2015";
+work.city = "Shoreham, N.Y.";
+work.discription = "this is a thing i should write latter";
+
+var education = {};
+education["school"] = "William Paterson University";
+education["years"] = "2013 - 2017";
+education["location"] = "Wayne, N.J.";
+education["major"] = "Mathematics   Minor: Computer Science";
+education["degree"] = "B.S.";
+
+var fWorkEmployer = HTMLworkEmployer.replace("%data%", work.employer);
+var fWorkTitle = HTMLworkTitle.replace("%data%", work.title);
+var fWorkDates = HTMLworkDates.replace("%data%", work.years);
+var fWorkLocation = HTMLworkLocation.replace("%data%", work.city);
+var fWorkDescription = HTMLworkDescription.replace("%data%", work.discription);
+
+var fSchoolName = HTMLschoolName.replace("%data%", education["school"]);
+var fSchoolDegree = HTMLschoolDegree.replace("%data%", education["degree"]);
+var fSchoolDates = HTMLschoolDates.replace("%data%", education["years"]);
+var fSchoolLocation = HTMLschoolLocation.replace("%data%", education["location"]);
+var fSchoolMajor = HTMLschoolMajor.replace("%data%", education["major"]);
+
+$("#main").append(fSchoolName);
+$("#main").append(fSchoolDegree);
+$("#main").append(fSchoolDates);
+$("#main").append(fSchoolLocation);
+$("#main").append(fSchoolMajor);
+
+$("#main").append(fWorkEmployer);
+$("#main").append(fWorkTitle);
+$("#main").append(fWorkDates);
+$("#main").append(fWorkLocation);
+$("#main").append(fWorkDiscription);
+*/
+
+var bio = 
+{
+    "name" : "Manuel E. Aguas" ,
+    "role" : "Software Engineer",
+    "github" : "https://github.com/maguas01",
+    "mobile" : "201 300 9182",
+    "contact" : "Cliffside Park" ,
+    "contact2" : "N.J. 07010",
+    "email" : "maguas01@gmail.com",
+    "pictureUrl" : "images/notme.png",
+    "welcomeMessage" : "Hello World!",
+    "skills" : ["C++", "Java", "Python", "JavaScript", "HTML", "Mathematica", "Octave", "SAS"]
+};
+
+var education = 
+{ 
+    "schools" : 
+    [ 
+        {
+            "name" : "William Paterson University",
+            "city" : "Wayne, N.J.",
+            "degree" : "B.S.",
+            "graduation" : 2017, 
+            "major" : ["Mathematics", "Computer Science"]
+        }
+    ]
+    
+};
+
